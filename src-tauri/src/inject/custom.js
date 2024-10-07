@@ -1,6 +1,18 @@
-/*
- * This file serves as a collection point for external JS and CSS dependencies.
- * It amalgamates these external resources for easier injection into the application.
- * Additionally, you can directly include any script files in this file
- * that you wish to attach to the application.
- */
+const observer = new MutationObserver(() => {
+  removeTargetBlank();
+});
+
+function removeTargetBlank() {
+  document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    link.removeAttribute('target');
+  });
+}
+
+const config = {
+  childList: true,
+  subtree: true
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  observer.observe(document.body, config);
+});

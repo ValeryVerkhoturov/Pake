@@ -1,11 +1,11 @@
 {
   "tauri": {
     "bundle": {
-      "icon": ["icons/weread.icns"],
-      "identifier": "com.pake.weread",
+      "icon": ["icons/pros-1024.icns"],
+      "identifier": "com.directorii.contractors",
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+      "category": "Lifestyle",
+      "copyright": "Directorii LLC",
       "externalBin": [],
       "longDescription": "",
       "macOS": {
